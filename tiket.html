@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan Tiket </title>
+</head>
+<body>
+    <h2>✈️Form Pemesanan Tiket Pesawat✈️</h2>
+
+    <!-- Informasi Penumpang -->
+    <fieldset>
+        <legend>Informasi Penumpang</legend>
+        <p>
+            Nama Lengkap: 
+            <input type="text" placeholder="Masukkan Nama Lengkap">
+        </p>
+        <p>
+            Nomor Identitas (KTP/Paspor): 
+            <input type="text" placeholder="Masukkan Nomor Identitas">
+        </p>
+        <p>
+            Jenis Kelamin:
+            <select>
+                <option>Laki-laki</option>
+                <option>Perempuan</option>
+            </select>
+        </p>
+        <p>
+            Alamat Email: 
+            <input type="email" placeholder="Masukkan Email">
+        </p>
+        <p>
+            Nomor Telepon: 
+            <input type="tel" placeholder="Masukkan Nomor Telepon">
+        </p>
+    </fieldset>
+    <br>
+
+    <!-- Informasi Penerbangan -->
+    <fieldset>
+        <legend>Informasi Penerbangan</legend>
+        <p>
+            Bandara Keberangkatan: 
+            <select>
+                <option>bandara internasional lombok</option>
+                <option>Ngurah Rai (DPS)</option>
+                <option>Juanda (SUB)</option>
+            </select>
+        </p>
+        <p>
+            Bandara Tujuan: 
+            <select>
+                <option>Soekarno-Hatta (CGK)</option>
+                <option>Ngurah Rai (DPS)</option>
+                <option>Juanda (SUB)</option>
+            </select>
+        </p>
+        <p>
+            Tanggal Keberangkatan: 
+            <input type="date" value="2024-09-26">
+        </p>
+        <p>
+            Tanggal Kepulangan (opsional): 
+            <input type="date" value="2024-09-26">
+        </p>
+        <p>
+            Jumlah Penumpang: 
+            <input type="number" min="1" value="1">
+        </p>
+        <p>
+            Kelas Penerbangan:
+            <select>
+                <option>Ekonomi</option>
+                <option>Bisnis</option>
+                <option>First Class</option>
+            </select>
+        </p>
+    </fieldset>
+    <br>
+
+    <!-- Metode Pembayaran -->
+    <fieldset>
+        <legend>Metode Pembayaran</legend>
+        <p><input type="radio" name="pembayaran"> Kartu Kredit</p>
+        <p><input type="radio" name="pembayaran"> Transfer Bank</p>
+        <p><input type="radio" name="pembayaran"> E-Wallet (GoPay, OVO, dll.)</p>
+    </fieldset>
+    <br>
+
+    <!-- Tombol Submit -->
+    <button type="submit">Pesan Tiket</button>
+</body>
+</html>
